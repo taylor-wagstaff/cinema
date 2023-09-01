@@ -1,0 +1,23 @@
+.layout-container {
+  background-color:ivory;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  grid-template-columns: 1fr 4fr;
+}
+
+
+.nav {
+  grid-column: 1 / 2;  /* Take up the first column */
+  grid-row: 1;  /* Stay on the first row */
+}
+
+.main {
+  grid-column: 2 / 3;  /* Take up the second column */
+  grid-row: 1;  /* Stay on the first row */
+
+}
+
+.footer {
+  grid-column: 1 / 3;  /* Span across both columns */
+  grid-row: 2;  /* Stay on the second row */
+}

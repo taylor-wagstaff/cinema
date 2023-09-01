@@ -1,13 +1,60 @@
 import styles from './page.module.css'
 
-
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <h1>Tongariro Cinema</h1>
+      
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
+        <p>Will show movie information</p>
       </div>
-
     </main>
   )
 }

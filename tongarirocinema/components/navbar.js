@@ -1,21 +1,15 @@
 import Link from 'next/link'
-
-{
-  /* <Link href="/">
-<li className="">
-  <a className="">Home</a>
-</li>
-</Link> */
-}
-
-// components/Navbar.js
+import './navbar.css'
 
 export default function Navbar() {
   return (
     <nav>
-      <Link href="/">Home</Link>
-      <Link href="/contact">Contact</Link>
-      <Link href="/about">About</Link>
+      <h1 className="heading">Tongariro Cinema</h1>
+      <div className="nav-container">
+        <Link href="/">HOME</Link>
+        <Link href="/contact">CONTACT</Link>
+        <Link href="/about">ABOUT</Link>
+      </div>
     </nav>
   )
 }
