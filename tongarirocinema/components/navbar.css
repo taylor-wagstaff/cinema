@@ -1,22 +1,47 @@
 .heading {
-  color: lightblue;
-  font-size: 3rem;
+  color: mediumvioletred;
+  font-size: 8rem;
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0;
+  padding: 0;
+  line-height: 0.9; 
+  -webkit-text-stroke: 4px midnightblue; 
 }
 
 
 
 .nav-container {
+  background-color:var(--second-color);
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;  
+  border-bottom: 4px solid midnightblue;
 
-display: flex;
-flex-direction:column;
-gap: 2rem;
-justify-content: flex-end;
-padding: 1rem;
+
+}
+
+.links-container {
+  display: flex;
+  gap: 2rem;
+  margin-right: 0.5rem;
 }
 
 
-.nav-container a{
-
-  color: black;
+.nav-container a {
+  font-size: 1.5rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: midnightblue;
   text-decoration: none;
+
 }
+
+.nav-container a:hover{
+  color:mediumvioletred;
+ 
+
+}
+
+
+

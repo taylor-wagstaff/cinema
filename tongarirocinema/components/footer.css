@@ -1,6 +1,9 @@
 .footer-container {
 
-  background-color: black;
-  color: white;
+  background-color: mediumvioletred;
+  color: black;
   height: 200px;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  padding: 1rem;
 }

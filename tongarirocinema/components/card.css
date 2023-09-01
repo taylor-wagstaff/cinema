@@ -1,0 +1,126 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+}
+
+
+
+.card_left {
+  width: 300px;  /* example width */
+  height: 450px; /* example height */
+  overflow: hidden;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  position: relative;
+}
+
+.card_left img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;  /* full width of its container */
+  height: 100%; /* full height of its container */
+  object-fit: cover; /* make sure the image covers the area without distortion */
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+}
+
+
+
+.card_right {
+  background-color:midnightblue;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+
+
+  border: 5px solid mediumvioletred; 
+
+
+  
+    display: flex;
+    flex-direction: column;  /* Stack children vertically */
+    justify-content: space-between;  /* Space between children */
+    align-items: flex-start;  /* Align children to the right */
+  
+  
+
+
+}
+
+.card_right h1{
+  font-size: 1.8rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: mediumvioletred;
+  
+}
+
+.card_details p{
+
+  color:darkgray;
+}
+
+.card_description p {
+  color: white;
+}
+
+.trailer_button {
+  width: fit-content;
+}
+
+.trailer_button a{
+  padding-top: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.trailer_button a:hover{
+
+  color: white;
+  text-decoration: none;
+}
+
+.card_timetable ul {
+  list-style-type: none;
+  padding-left: 0; /* Remove padding from the list */
+}
+
+.card_timetable li {
+  color: white;
+  padding: 10px 0; /* Add vertical padding to space items apart */
+  border-bottom: 1px solid #ddd; /* Add a line underneath */
+  margin-bottom: 5px; /* Add margin for more spacing after the line */
+}
+
+.card_timetable li:last-child {
+  border-bottom: none; /* Remove the border from the last item */
+}
+
+
+.buy_button a {
+  padding: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  text-decoration: none;
+  background-color: mediumvioletred;
+  border-radius: 1rem;
+  align-self: flex-end;
+  float: right;
+}
+
+
+.buy_button a:hover{
+
+  
+  color: white;
+  text-decoration: none;
+}
