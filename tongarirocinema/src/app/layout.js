@@ -1,4 +1,5 @@
 import './globals.css'
+import Slider from '../../components/slider'
 import Navbar from '../../components/navbar'
 import Footer from '../../components/footer'
 
@@ -12,8 +13,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="layout-container">
         <div className="nav">
-          <Navbar />
+        <Navbar />
         </div>
+        <Slider />
         <div className="main">{children}</div>
         <div className="footer">
           <Footer />

@@ -12,12 +12,12 @@
 
 
 .card_left {
-  width: 300px;  /* example width */
-  height: 450px; /* example height */
+  max-width: 360px;  /* example width */
+  max-height: 500px; /* example height */
   overflow: hidden;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
-  position: relative;
+  /* position: relative; */
 }
 
 .card_left img {

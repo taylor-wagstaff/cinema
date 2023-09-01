@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: black;
+  --main-bg-color: azure;
   --second-color:midnightblue;
 }
 
@@ -12,7 +12,7 @@
 
 .layout-container {
   display: grid;
-  grid-template-rows: 0.5fr 6fr;
+  grid-template-rows: 0.5fr 0.2fr 3fr;
   grid-template-columns: 1fr;
   margin:0;
   background-color:var(--second-color);
