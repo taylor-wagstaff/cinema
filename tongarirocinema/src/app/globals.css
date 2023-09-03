@@ -1,6 +1,14 @@
 :root {
-  --main-bg-color: azure;
-  --second-color:midnightblue;
+  --main-bg-color:  honeydew;
+  --second-color: honeydew;
+  --headings-color: white;
+  --links-color: blue;
+  --card-header-border: black;
+  --card-text: black;
+  --card-background: white;
+  --footer-background: black;
+
+  /* --main-bg-color: honeydew; --main-bg-color: springgreen; */
 }
 
 
@@ -12,7 +20,7 @@
 
 .layout-container {
   display: grid;
-  grid-template-rows: 0.5fr 0.2fr 3fr;
+  grid-template-rows: 0.5fr 4fr 0.2fr;
   grid-template-columns: 1fr;
   margin:0;
   background-color:var(--second-color);

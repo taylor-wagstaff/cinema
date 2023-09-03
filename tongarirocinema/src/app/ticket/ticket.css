@@ -1,0 +1,37 @@
+.ticket-container {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.card_ticket {
+  background-color:var(--card-background);
+  /* border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  border-bottom-left-radius: 3rem; */
+  border: 2px solid var(--card-header-border); 
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+
+}
+
+.card_ticket h1{
+  font-size: 1.8rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--card-header-border);
+  text-align: center;
+}
+
+.card_ticket_details p{
+
+  color:darkgray;
+}
+
+.card_ticket_description p {
+  color: var(--card-text);
+}

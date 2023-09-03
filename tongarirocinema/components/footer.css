@@ -1,9 +1,31 @@
 .footer-container {
-
-  background-color: mediumvioletred;
-  color: black;
-  height: 200px;
+  margin-top: 5rem;
+  background-color: var(--footer-background);
+  color: white;
+  height: 150px;
+  padding: 1rem;
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
-  padding: 1rem;
+
+}
+
+
+.tongariro-footer {
+  
+  color: #ecf0f1;
+ 
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.tongariro-footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.tongariro-footer a:hover {
+  text-decoration: underline;
 }

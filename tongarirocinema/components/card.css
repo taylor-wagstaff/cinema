@@ -1,66 +1,58 @@
 .card {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 0.7fr 3fr;
   margin-bottom: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 5rem;
+  margin-bottom: 2rem;
 
 }
 
 
 
 .card_left {
-  max-width: 360px;  /* example width */
-  max-height: 500px; /* example height */
+  max-width: 260px; 
+  max-height: 400px;
   overflow: hidden;
   border-top-left-radius: 3rem;
   border-bottom-left-radius: 3rem;
-  /* position: relative; */
+  border-left: 2px solid var(--card-header-border);
+  border-top: 2px solid var(--card-header-border); 
+  border-bottom: 2px solid var(--card-header-border); 
+
+
+ 
 }
 
 .card_left img {
   max-width: 100%;
   max-height: 100%;
-  width: 100%;  /* full width of its container */
-  height: 100%; /* full height of its container */
-  object-fit: cover; /* make sure the image covers the area without distortion */
-  border-top-left-radius: 3rem;
-  border-bottom-left-radius: 3rem;
+  width: 100%;  
+  height: 100%; 
+  object-fit: cover; 
+  /* border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem; */
 }
 
 
 
 .card_right {
-  background-color:midnightblue;
-  border-top-right-radius: 3rem;
+  background-color:var(--card-background);
+  /* border-top-right-radius: 3rem;
   border-bottom-right-radius: 3rem;
-  border-bottom-left-radius: 3rem;
-
+  border-bottom-left-radius: 3rem; */
+  border: 2px solid var(--card-header-border); 
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
-
-
-  border: 5px solid mediumvioletred; 
-
-
-  
-    display: flex;
-    flex-direction: column;  /* Stack children vertically */
-    justify-content: space-between;  /* Space between children */
-    align-items: flex-start;  /* Align children to the right */
-  
-  
-
 
 }
 
 .card_right h1{
   font-size: 1.8rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: mediumvioletred;
+  color: var(--card-header-border);
   
 }
 
@@ -70,7 +62,7 @@
 }
 
 .card_description p {
-  color: white;
+  color: var(--card-text);
 }
 
 .trailer_button {
@@ -80,13 +72,13 @@
 .trailer_button a{
   padding-top: 1rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: deepskyblue;
+  color: var(--links-color);
   text-decoration: none;
 }
 
 .trailer_button a:hover{
 
-  color: white;
+  color: var(--card-text);
   text-decoration: none;
 }
 
@@ -96,9 +88,9 @@
 }
 
 .card_timetable li {
-  color: white;
+  color: var(--card-text);
   padding: 10px 0; /* Add vertical padding to space items apart */
-  border-bottom: 1px solid #ddd; /* Add a line underneath */
+  border-bottom: 1px solid black; /* Add a line underneath */
   margin-bottom: 5px; /* Add margin for more spacing after the line */
 }
 
@@ -110,18 +102,21 @@
 .buy_button a {
   padding: 1rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: black;
+  color: white;
   text-decoration: none;
-  background-color: mediumvioletred;
+  background-color: blue;
   border-radius: 1rem;
   align-self: flex-end;
   float: right;
+  border: 1px solid blue;
+  transition: background-color 0.3s;
 }
 
 
 .buy_button a:hover{
 
-  
-  color: white;
+  border: 1px solid black;
+  color: black;
+  background-color: white;
   text-decoration: none;
 }
