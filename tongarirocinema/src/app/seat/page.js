@@ -1,5 +1,7 @@
 'use client'
 
+// Chat Gpt was used to generate a Basic Seat Select component
+
 import { useState } from 'react'
 
 import './seat.css'
