@@ -1,13 +1,17 @@
 'use client'
 
 // Chat Gpt was used to generate a Basic Seat Select component
-
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 
 import './seat.css'
 
 export default function Seat() {
   const [selectedSeats, setSelectedSeats] = useState([])
+  const [title, setTitle] = useState([])
+  const [time, setTime] = useState([])
+
+  const searchParams = useSearchParams()
 
   const toggleSeat = (seatNumber) => {
     if (selectedSeats.includes(seatNumber)) {
@@ -16,30 +20,52 @@ export default function Seat() {
       setSelectedSeats([...selectedSeats, seatNumber])
     }
   }
+  useEffect(() => {
+    setTitle(searchParams.get('title'))
+    setTime(searchParams.get('time'))
+  }, [searchParams])
+
   return (
     <div>
-      {/* <h1>{title}</h1>
-      <p>Selected Time: {time}</p> */}
-
-      <div className="screen">Screen</div>
-
-      {[...Array(5).keys()].map((row) => (
-        <div key={row} className="row">
-          {[...Array(8).keys()].map((col) => {
-            const seatNumber = `${row + 1}-${col + 1}`
-            const isSelected = selectedSeats.includes(seatNumber)
-            return (
-              <button
-                key={col}
-                className={`seat ${isSelected ? 'selected' : ''}`}
-                onClick={() => toggleSeat(seatNumber)}
-              >
-                {seatNumber}
-              </button>
-            )
-          })}
+      <div className="screen">
+        <div className="seat-details">
+          <h1>{title}</h1>
+          <p>{time}</p>
         </div>
-      ))}
+
+        <div className="screen-cinema"></div>
+
+        {[...Array(5).keys()].map((row) => {
+          const rowLetter = String.fromCharCode(65 + row) // 65 is the ASCII value for 'A'
+          return (
+            <div key={rowLetter} className="row">
+              {[...Array(8).keys()].map((col) => {
+                const seatNumber = `${rowLetter}-${col + 1}`
+                const isSelected = selectedSeats.includes(seatNumber)
+                return (
+                  <button
+                    key={col}
+                    className={`seat ${isSelected ? 'selected' : ''}`}
+                    onClick={() => toggleSeat(seatNumber)}
+                  >
+                    {seatNumber}
+                  </button>
+                )
+              })}
+            </div>
+          )
+        })}
+
+        <div className="order-details">
+          <div>Seats: {selectedSeats.join(', ')}</div>
+          <div>Tickets: {selectedSeats.length}</div>
+          <div>Price: ${selectedSeats.length * 15}</div>
+        </div>
+
+        <div className="order_buy_button">
+          <button>BUY TICKETS</button>
+        </div>
+      </div>
     </div>
   )
 }

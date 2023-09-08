@@ -7,7 +7,7 @@ import { useState } from 'react'
 
 const Modal = ({ setIsOpen, timetable, title }) => {
   const [selectedTime, setSelectedTime] = useState(timetable[0])
-  console.log('timetable', timetable)
+  
 
   const handleTimeChange = (e) => {
     setSelectedTime(e.target.value)
@@ -33,7 +33,7 @@ const Modal = ({ setIsOpen, timetable, title }) => {
           ))}
         </select>
         <Link href={`/seat?title=${title}&time=${selectedTime}`}>
-          Seat Select
+          Proceed to Seat Select
         </Link>
       </div>
     </div>

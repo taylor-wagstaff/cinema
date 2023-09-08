@@ -113,8 +113,8 @@
 }
 
 
-.buy_button a:hover{
-
+.buy_button button:hover{
+  cursor: pointer;
   border: 1px solid black;
   color: black;
   background-color: white;
