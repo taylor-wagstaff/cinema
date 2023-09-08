@@ -99,7 +99,7 @@
 }
 
 
-.buy_button a {
+.buy_button button {
   padding: 1rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: white;

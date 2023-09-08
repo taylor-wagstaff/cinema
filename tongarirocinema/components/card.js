@@ -1,6 +1,11 @@
+'use client'
 import './card.css'
+import { useState } from 'react'
+import Modal from './modal'
 
 export default function Card({ data }) {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div className="card">
       <div className="card_left">
@@ -29,13 +34,22 @@ export default function Card({ data }) {
           </ul>
         </div>
         <div className="buy_button">
-          <a
+          {/* <a
             href="https://www.youtube.com/watch?v=ot6C1ZKyiME"
             target="_blank"
             rel="noopener noreferrer"
           >
             BUY TICKETS
-          </a>
+          </a> */}
+
+          <button onClick={() => setIsOpen(true)}>BUY TICKETS</button>
+          {isOpen && (
+            <Modal
+              setIsOpen={setIsOpen}
+              timetable={data.timetable}
+              title={data.title}
+            />
+          )}
         </div>
       </div>
     </div>
