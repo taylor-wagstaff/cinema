@@ -3,6 +3,7 @@
 // Chat Gpt was used to generate a Basic Seat Select component
 import { useState, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
+import Credit from '../../../components/credit'
 
 import './seat.css'
 
@@ -10,6 +11,7 @@ export default function Seat() {
   const [selectedSeats, setSelectedSeats] = useState([])
   const [title, setTitle] = useState([])
   const [time, setTime] = useState([])
+  const [isOpen, setIsOpen] = useState(false)
 
   const searchParams = useSearchParams()
 
@@ -36,7 +38,7 @@ export default function Seat() {
         <div className="screen-cinema"></div>
 
         {[...Array(5).keys()].map((row) => {
-          const rowLetter = String.fromCharCode(65 + row) // 65 is the ASCII value for 'A'
+          const rowLetter = String.fromCharCode(65 + row)
           return (
             <div key={rowLetter} className="row">
               {[...Array(8).keys()].map((col) => {
@@ -63,7 +65,14 @@ export default function Seat() {
         </div>
 
         <div className="order_buy_button">
-          <button>BUY TICKETS</button>
+          <button onClick={() => setIsOpen(true)}>BUY TICKETS</button>
+          {isOpen && (
+            <Credit
+              setIsOpen={setIsOpen}
+              price={selectedSeats.length * 15}
+              title={title}
+            />
+          )}
         </div>
       </div>
     </div>

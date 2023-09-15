@@ -76,7 +76,7 @@
   align-self: flex-end;
   float: right;
   border: 1px solid blue;
-  transition: background-color 0.3s;
+ margin-bottom: 1rem;
 }
 
 

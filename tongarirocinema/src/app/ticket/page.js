@@ -13,10 +13,7 @@ export default function Page() {
         </div>
 
         <div className="card_ticket_description">
-          <p>Children: $12.00 </p>
-          <p>Adults $15.00</p>
-          <p>Senior Citizens (60+) $12.00</p>
-          <p>Students $12.00</p>
+          <p>Ticket Price: $15.00</p>
         </div>
       </div>
     </div>

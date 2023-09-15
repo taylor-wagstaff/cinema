@@ -9,6 +9,8 @@ export default function Home() {
         <Card data={movieData[0]} />
         <Card data={movieData[1]} />
         <Card data={movieData[2]} />
+        <Card data={movieData[3]} />
+
       </div>
     </main>
   )

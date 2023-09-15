@@ -8,11 +8,11 @@ export const movieData = [
     trailerUrl: 'https://www.youtube.com/watch?v=ot6C1ZKyiME',
     timetable: [
       'Today 8:05 PM',
-      'Saturday September 2:50 PM',
-      'Sunday September 6:25 PM',
-      'Saturday September 12:25 PM',
-      'Sunday September 2:25 PM',
-      'Monday September 5:50 PM',
+      'Saturday September 23th 2:50 PM',
+      'Sunday September 24th 6:25 PM',
+      'Saturday September 30th 12:25 PM',
+      'Sunday October 1st 2:25 PM',
+      'Monday October 2nd 5:50 PM',
     ],
   },
   {
@@ -22,14 +22,14 @@ export const movieData = [
     details: '114 mins | Rated PG',
     description:
       'To live in Barbie Land is to be a perfect being in a perfect place. Unless you have a full-on existential crisis. Or youre a Ken.',
-    trailerUrl: 'URL_FOR_SECOND_MOVIE_TRAILER',
+    trailerUrl: 'https://www.youtube.com/watch?v=pBk4NYhWNMM',
     timetable: [
       'Today 8:05 PM',
-      'Saturday September 2:50 PM',
-      'Sunday September 6:25 PM',
-      'Saturday September 12:25 PM',
-      'Sunday September 2:25 PM',
-      'Monday September 5:50 PM',
+      'Saturday September 23th 2:50 PM',
+      'Sunday September 24th 6:25 PM',
+      'Saturday September 30th 12:25 PM',
+      'Sunday October 1st 2:25 PM',
+      'Monday October 2nd 5:50 PM',
     ],
   },
   {
@@ -39,14 +39,32 @@ export const movieData = [
     details: '106 mins | Rated M',
     description:
       'Nora and Hae Sung, two deeply connected childhood friends, are wrest apart after Noras family emigrates from South Korea. 20 years later, they are reunited for one fateful week as they confront notions of love and destiny',
-    trailerUrl: 'https://www.youtube.com/watch?v=J_84SmZclbw',
+    trailerUrl: 'https://www.youtube.com/watch?v=kA244xewjcI',
     timetable: [
       'Today 8:05 PM',
-      'Saturday September 2:50 PM',
-      'Sunday September 6:25 PM',
-      'Saturday September 12:25 PM',
-      'Sunday September 2:25 PM',
-      'Monday September 5:50 PM',
+      'Saturday September 23th 2:50 PM',
+      'Sunday September 24th 6:25 PM',
+      'Saturday September 30th 12:25 PM',
+      'Sunday October 1st 2:25 PM',
+      'Monday October 2nd 5:50 PM',
+    ],
+  },
+
+  {
+    imageUrl:
+      'https://www.belarte.co.uk/cdn/shop/products/Matrix1.jpg?v=1622311852',
+    title: 'The Matrix',
+    details: '136 mins | Rated M',
+    description:
+      'Thomas Anderson, a computer programmer, is led to fight an underground war against powerful computers who have constructed his entire reality with a system called the Matrix.',
+    trailerUrl: 'https://www.youtube.com/watch?v=vKQi3bBA1y8',
+    timetable: [
+      'Today 8:05 PM',
+      'Saturday September 23th 2:50 PM',
+      'Sunday September 24th 6:25 PM',
+      'Saturday September 30th 12:25 PM',
+      'Sunday October 1st 2:25 PM',
+      'Monday October 2nd 5:50 PM',
     ],
   },
 ]

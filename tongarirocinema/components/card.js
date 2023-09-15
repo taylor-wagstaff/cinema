@@ -34,14 +34,6 @@ export default function Card({ data }) {
           </ul>
         </div>
         <div className="buy_button">
-          {/* <a
-            href="https://www.youtube.com/watch?v=ot6C1ZKyiME"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            BUY TICKETS
-          </a> */}
-
           <button onClick={() => setIsOpen(true)}>BUY TICKETS</button>
           {isOpen && (
             <Modal
