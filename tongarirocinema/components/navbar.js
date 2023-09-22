@@ -4,7 +4,9 @@ import './navbar.css'
 export default function Navbar() {
   return (
     <nav>
-      <h1 className="heading">TONGARIRO CINEMA-</h1>
+      <h1 className="heading">TONGARIRO-</h1>
+      <h1 className="heading">CINEMA-</h1>
+
       <div className="nav-container">
         <div className="links-container">
           <Link href="/">NOW PLAYING</Link>
